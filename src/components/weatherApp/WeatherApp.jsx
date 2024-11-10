@@ -3,7 +3,7 @@ import InfoBox from "../infoBox/InfoBox";
 import { useState } from "react";
 export default function WeatherApp() {
   let [weatherInfo, setWeatherInfo] = useState({
-    city: "Delhi",
+    city: "Wonderland",
     feels_like: 24.42,
     humidity: 73,
     temp: 24.05,
