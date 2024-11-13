@@ -31,7 +31,7 @@ export default function InfoBox({ info }) {
                 ? HOT_URL
                 : COLD_URL
             }
-            title="green iguana"
+            title="weather"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
