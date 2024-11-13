@@ -25,7 +25,6 @@ export default function SearchBox({ updateInfo }) {
         feels_like: jsonResponse.main.feels_like,
         weather: jsonResponse.weather[0].description,
       };
-      console.log(result);
       return result;
     } catch (err) {
       throw err;
@@ -43,6 +42,7 @@ export default function SearchBox({ updateInfo }) {
       let newInfo = await getWeatherInfo(city);
       updateInfo(newInfo);
       console.log(city);
+      console.log(newInfo);
       setError(false);
     } catch (err) {
         setError(true);
